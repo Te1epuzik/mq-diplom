@@ -795,11 +795,6 @@ body {
 
 	.page {
 		max-width: 1200px;
-
-		/*--не-забыть-убрать-- */
-		/* width: 768px;
-		margin: 0 auto; */
-		/*---------------------*/
 	}
 	
 	.header {
@@ -871,11 +866,13 @@ body {
 	.main-container {
 		margin-top: 5rem;
 		display: flex;
+		justify-content: flex-end;
 		gap: 3.5rem;
 		padding: 0 3.5rem;
 	}
 
 	.post-list {
+		flex-grow: 1;
 		margin: 0;
 		padding: 0;
 		width: 56.16%;
@@ -905,9 +902,9 @@ body {
 		font-weight: 2.2rem;
 	}
 	
-		.second-paragraph {
-			margin-top: 1.6rem;
-		}
+	.second-paragraph {
+		margin-top: 1.6rem;
+	}
 
 	.side-bar {
 		margin: 0;
