@@ -305,7 +305,7 @@ html {
 }
 
 .post:not(:first-child) {
-	margin-top: 5.8rem;
+	margin-top: 5.7rem;
 }
 
 .post-list {
@@ -716,6 +716,7 @@ html {
 }
 
 .footer {
+	margin-top: 3.5rem;
 	padding: 0 1.5rem 4rem 1.5rem;
 }
 
@@ -725,7 +726,6 @@ html {
 	justify-content: center;
 	width: 100%;
 	height: 8.3rem;
-	margin-top: 4.1rem;
 	background-color: var(--light-gray);
 }
 
@@ -830,11 +830,8 @@ html {
 
 	.trends-container {
 		margin-top: 3.2rem;
-
 		display: grid;
-
 		grid: repeat(2, 1fr) / repeat(2, 1fr);
-
 	}
 
 	.trends__item {
@@ -877,7 +874,7 @@ html {
 	}
 
 	.post:not(:first-child) {
-    margin-top: 6.7rem;
+    margin-top: 5.9rem;
 	}
 	
 	.post__category-list {
@@ -940,7 +937,7 @@ html {
 	.shop__container {
 		display: grid;
 
-		grid: repeat(2, 1fr) / repeat(2, 1fr);
+		grid: repeat(2, auto) / repeat(2, 1fr);
 
 		column-gap: 2.3rem;
 		row-gap: 2.8rem;
@@ -950,8 +947,8 @@ html {
 		flex-grow: 1;
 	}
 
-	.social-media {
-		margin-top: 2.7rem;
+	.footer {
+		margin-top: 5.1rem;
 	}
 
 }
