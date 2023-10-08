@@ -948,6 +948,10 @@ body {
 		row-gap: 2.8rem;
 	}
 
+	.shop__content {
+		flex-grow: 1;
+	}
+
 	.social-media {
 		margin-top: 2.7rem;
 	}
