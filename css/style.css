@@ -1227,6 +1227,7 @@ html {
     margin-top: 4.1rem;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: nowrap;
 		gap: .6rem
 	}
 
