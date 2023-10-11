@@ -791,7 +791,7 @@ html {
 	bottom: 0;
 	background-color: var(--black-opacity);
 
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	padding: 1.5rem;
@@ -1027,12 +1027,14 @@ html {
 
 	.trends-container {
 		margin-top: 3.2rem;
-		display: grid;
-		grid: repeat(2, 1fr) / repeat(2, 1fr);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.trends__item {
 		height: 32.16vw;
+		width: calc(50% - (.3rem / 2));
 	}
 
 	.trends__content {
@@ -1132,12 +1134,16 @@ html {
 	}
 
 	.shop__container {
-		display: grid;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 
-		grid: repeat(2, auto) / repeat(2, 1fr);
-
-		column-gap: 2.3rem;
+		gap: 2.3rem;
 		row-gap: 2.8rem;
+	}
+
+	.shop__card {
+		width: calc(50% - (2.3rem / 2));
 	}
 
 	.shop__content {
@@ -1305,7 +1311,7 @@ html {
 	}
 
 	.shop__container {
-		grid: 1fr / repeat(3, 1fr);
+		flex-wrap: nowrap;
 		gap: 6.3rem;
 	}
 
