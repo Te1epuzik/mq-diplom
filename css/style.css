@@ -3,6 +3,9 @@
 	--white: #fff;
 	--black: #000;
 	--light-gray: #f4f7f6;
+	--light-gray-2: #eee;
+	--gray-888: #888;
+	--gray-999: #999;
 	--dark: #323232;
 	--gold: #b59f5b;
 	--gold-opacity-06: rgba(181, 159, 91, .6);
@@ -348,7 +351,7 @@ html {
 }
 
 .post__date {
-	color: #888888;
+	color: var(--gray-888);
 	font-size: 1.2rem;
 	font-weight: 400;
 }
@@ -373,7 +376,7 @@ html {
 	bottom: -22px;
 	left: 0;
 	width: 100%;
-	border-bottom: 3px solid #eee;
+	border-bottom: 3px solid var(--light-gray-2);
 }
 
 .side-bar {
@@ -425,7 +428,7 @@ html {
 .side-post__date {
 	display: block;
 	font-size: 1.2rem;
-	color: #888888;
+	color: var(--gray-888);
 }
 
 .side-post__title {
@@ -547,7 +550,7 @@ html {
 	text-transform: uppercase;
 	
 	box-sizing: border-box;
-	border: 3px solid #eee;
+	border: 3px solid var(--light-gray-2);
 	padding: .5rem 1.35rem;
 	cursor: pointer;
 }
@@ -584,7 +587,7 @@ html {
 	position: absolute;
 	bottom: -14px;
 	left: 0;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid var(--light-gray-2);
 }
 
 .categories__item_margin {
@@ -780,7 +783,7 @@ html {
 	text-align: center;
 	font-size: 12px;
 	font-weight: 700;
-	color: #999999;
+	color: var(--gray-999);
 }
 
 .popup {
@@ -800,10 +803,9 @@ html {
 .popup__content {
 	position: relative;
 	box-sizing: border-box;
-	overflow-y: scroll;
 	box-sizing: border-box;
-	padding: 1.4rem 1.9rem 3rem 2.5rem;
-	background-color: #fff;
+	padding: 1.5rem 2.5rem 3rem 2.5rem;
+	background-color: var(--white);
 
 	width: 100%;
 	height: 80%;
@@ -844,9 +846,10 @@ html {
 	margin-top: 4.1rem;
 }
 
-.visits-question {
+.question {
 	font-size: 1.3rem;
 	font-weight: 400;
+	width: 100%;
 }
 
 .popup__visits {
@@ -880,12 +883,8 @@ html {
 	outline-offset: -1px;
 }
 
-.newsletter-question {
+.question_newsletter {
 	margin-top: 3.2rem;
-
-	font-size: 1.3rem;
-	font-weight: 400;
-	width: 100%;
 }
 
 .popup__radio-buttons {
@@ -924,11 +923,8 @@ html {
 	background-image: url(../svg/form-circle.svg);
 }
 
-.review-question {
+.question_review {
 	margin-top: 3.6rem;
-
-	font-size: 1.3rem;
-	font-weight: 400;
 }
 
 .popup__review {
@@ -972,11 +968,10 @@ html {
 }
 
 .popup__close {
-	width: 3rem;
-	height: 3rem;
-	position: absolute;
-	top: 0;
-	right: 0;
+	width: 2.8rem;
+  position: absolute;
+  top: -33px;
+  right: 0;
 }
 
 @media  (min-width: 641px) {
@@ -1154,6 +1149,21 @@ html {
 		margin-top: 5.1rem;
 	}
 
+	.popup__content {
+		padding: 3.7rem 2.9rem 0 2.9rem;
+		max-height: 59.6rem;
+		min-height: 59.6rem;
+    max-width: 38.9rem;
+	}
+
+	.popup__title {
+		font-size: 1.8rem;
+	}
+
+	.popup__close {
+		width: 2.7rem;
+    top: -37px;
+	}
 }
 
 @media (min-width: 1201px) {
@@ -1330,5 +1340,40 @@ html {
 
 	.copyright {
 		margin-top: 7.4rem;
+	}
+
+	.popup__content {
+		padding-top: 3.2rem;
+		max-width: 39rem;
+		max-height: 58.9rem;
+    min-height: 58.9rem;
+	}
+
+	.popup__title {
+		font-size: 2rem;
+	}
+
+	.popup__radio-buttons {
+		margin-top: 1rem;
+		gap: 1.3rem;
+	}
+
+	.popup__newsletter {
+		margin-left: 2.4rem;
+	}
+
+	.popup__newsletter::before {
+		left: -22px;
+    width: 1.7rem;
+	}
+
+	.question_review {
+		margin-top: 3.3rem;
+	}
+
+	.popup__close {
+		width: 1.8rem;
+    right: -1px;
+    top: -27px;
 	}
 }
